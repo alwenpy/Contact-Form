@@ -5,7 +5,7 @@
 To run the program, follow the steps below :  
 1. Install XAMPP Server: Download the XAMPP server and proceed with the installation.
 2. Set Up Files: Create a 'contact' folder and save the downloaded index.html and index.php files inside it.
-3. Configure Folder Structure: Navigate to the 'htdocs' folder in the XAMPP directory (C-drive) or you can directly clone it using `git clone ` 
+3. Configure Folder Structure: Navigate to the 'htdocs' folder in the XAMPP directory (C-drive) or you can directly clone it using `git clone https://github.com/alwenpy/Contact-Form.git` 
 4. Start Servers: Launch XAMPP, and initiate both Apache and SQL servers. If the SQL server encounters issues starting, access Task Manager, terminate any running MySQL instances, and then restart the SQL server.
 5. Access Localhost: Open your preferred web browser and enter "localhost" along with the specified port number from the XAMPP window.
 6. Navigate to Contact Form: Click on the 'contact' folder, followed by selecting form.html to access the contact form.
