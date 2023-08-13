@@ -44,9 +44,9 @@ else
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "techsolv_db";
+    $dbname = "userdb";
     $conn = new mysqli($servername,$username, $password,$dbname);
-    $sql="INSERT INTO contact_form VALUES('$fullname','$phone','$email','$subject','$message','$date','$ip')";
+    $sql="INSERT INTO contact_form VALUES('$name','$phone','$email','$subject','$message','$date','$ip')";
     if ($conn->query($sql) === TRUE)
     {
         echo "Your response has been recorded successfully"."<br>";
@@ -73,7 +73,7 @@ else
     ini_set('smtp_ssl', 'tls');
     
     if (mail($to, $subject, $message, $headers, "-f $email")) {
-        echo "Email sent successfully!";
+        echo " From Submitted Email sent successfully!";
     } else {
         echo "Error sending email.";
         error_reporting(E_ALL);
