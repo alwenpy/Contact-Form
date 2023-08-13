@@ -1,5 +1,4 @@
 <?php
-    echo "Form submitted!";
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
@@ -43,13 +42,13 @@ else
     }
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "user123";
     $dbname = "userdb";
     $conn = new mysqli($servername,$username, $password,$dbname);
     $sql="INSERT INTO contact_form VALUES('$name','$phone','$email','$subject','$message','$date','$ip')";
     if ($conn->query($sql) === TRUE)
     {
-        echo "Your response has been recorded successfully"."<br>";
+        echo "Your response has been recorded successfully! ";
     } 
     else 
     {
@@ -73,7 +72,7 @@ else
     ini_set('smtp_ssl', 'tls');
     
     if (mail($to, $subject, $message, $headers, "-f $email")) {
-        echo " From Submitted Email sent successfully!";
+        echo " From Submitted!";
     } else {
         echo "Error sending email.";
         error_reporting(E_ALL);
